@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Registration Form</h1>
-    <form action="" method="get">
+    <form action="/process" method="post">
         <div>
             <label for="f_name">First Name: *</label>
             <input type="text" name="f_name" id="f_name" required><br><br>
@@ -22,12 +22,12 @@
             <input type="email" name="email" id="email" required><br><br>
         </div>
         <div>
-            <label for="password">Password: *</label>
+            <label for="pwd">Password: *</label>
             <input type="password" name="pwd" id="pwd" required><br><br>
         </div>
         <div>
-            <label for="Confirmpassword">Confirm Password: *</label>
-            <input type="password" name="pwd" id="pwd" required><br><br>
+            <label for="pwd1">Confirm Password: *</label>
+            <input type="password" name="pwd1" id="pwd1" required><br><br>
         </div>
         <div>
             <label for="b_day">Birth Day: *</label>
@@ -40,12 +40,12 @@
             <input type="radio" id="female" name="gender" value="female">
             <label for="female">female</label>
             <input type="radio" id="other" name="gender" value="other">
-            <label for="Non-binary">Non-binary</label>
-            <input type="radio" id="other" name="gender" value="other">
-            <label for="N/A">I prefer not to answer</label><br><br>
+            <label for="other">Non-binary</label>
+            <input type="radio" id="other2" name="gender" value="other2">
+            <label for="other2">I prefer not to answer</label><br><br>
         </div>
         <label for="description">A short description about my self:</label><br><br>
-        <textarea name="description" id="description" cols="50" rows="4"></textarea><br><br>
+        <textarea name="comment"  id="description" cols="50" rows="4"></textarea><br><br>
         <label for="fav_lang">Favorite language:</label>
         <select name="fav_lang" id="fav_lang">
             <option value="Html">Html</option>
@@ -53,9 +53,9 @@
             <option value="JS">JavaScript</option>
             <option value="C#">C#</option>
         </select><br><br>
-        <input type="checkbox" required>
-        <label for="">yes, I would like to recieve periodic email updates</label><br><br>
-        <button type="buttton">Create account</button>
+        <input type="checkbox" name="accept" id="accept" required>
+        <label for="accept">yes, I would like to recieve periodic email updates</label><br><br>
+        <input type="submit">Create account>
         <p>*indicate a required field</p>    
     </form>
 </body>
